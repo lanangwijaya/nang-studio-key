@@ -1,0 +1,1 @@
+import {json,owner} from "./_config.js";export default async function(req,res){if(!owner(req))return json(res,401,{error:"Owner only"});return json(res,200,{ok:true})}
